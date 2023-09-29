@@ -1,0 +1,32 @@
+Trained Data (Training Data):
+Trained data, also known as training data, is the portion of the dataset that is used to train a machine learning model. This dataset contains input data (e.g., images, audio recordings, genetic sequences) along with corresponding labels or annotations specifying the correct animal species. The model learns from this data, adjusting its parameters to accurately predict the labels.
+
+Test Data (Testing Data):
+Test data, on the other hand, is a separate portion of the dataset that the model has never seen during training. It is used to evaluate the model's performance and measure its accuracy. The test data also consists of inputs and the corresponding true labels, allowing the model's predictions to be compared with the actual labels.
+Data Collection and Preparation:
+
+Gather a diverse dataset containing images, sounds, or genetic information related to different animal species.
+Annotate or label the data, specifying the correct species for each sample.
+Model Training:
+Use a machine learning algorithm or a deep learning architecture to train a model using the annotated training data.
+The model learns to associate features of the data with corresponding species labels during this training phase.
+Model Evaluation:
+Evaluate the trained model's performance using the test dataset, which it has never seen before.
+Calculate metrics such as accuracy, precision, recall, F1 score, etc., to assess the model's performance in identifying animal species
+1. Importing TensorFlow and Keras: Keras is a high-level neural networks API that runs on top of TensorFlow (and other frameworks). It provides an easy-to-use interface for building and training deep learning models.
+2.ImageDataGenerator is a utility in Keras for generating batches of augmented image data during the model training process. It is commonly used for preprocessing and augmenting image data.
+3. Importing Callbacks:
+Callbacks in Keras allow for custom actions to be performed during training, such as saving the model or stopping training early based on certain conditions.
+4. Usage of ImageDataGenerator:
+ImageDataGenerator is used to preprocess and augment image data. It can perform operations like scaling, rotation, zooming, etc., to provide a varied dataset for training
+5. Callbacks for Model Training:
+Callbacks are passed to the fit function during model training to monitor and modify the training process. Commonly used callbacks include ModelCheckpoint (to save the model) and EarlyStopping (to stop training early if certain conditions are met).
+python
+These components are crucial for building, training, and evaluating models in an animal species detection project using deep learning. The ImageDataGenerator helps preprocess image data, and callbacks provide flexibility during the training phase.
+
+
+
+
+
+
+
